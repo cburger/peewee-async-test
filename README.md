@@ -1,7 +1,7 @@
 # Peewee Async Test Project
 
 This is a test project to demonstrate testing Peewee Async with Pytest
-where every test function is wrapped in an transaction and the changes
+where every test function is wrapped in a transaction and the changes
 to the database rolled back once the test is completed.
 
 The issue I am having is that the code works fine with one test, but the
@@ -12,7 +12,7 @@ second test always fails with the following exception:
 ## To run the tests
 
 The tests require a local Postgres server to be running which allows
-passwordless log ins. The tests will create a `test_db` database.
+passwordless logins. The Pytest will create a `test_db` database.
 
 Create a virtual environment for the project and install the
 project with its dependencies with:
