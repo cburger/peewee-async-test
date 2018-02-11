@@ -6,6 +6,7 @@ setup(
     author='Carel Burger',
     install_requires=[
         'aiohttp ~=2.3.2 ',
+        'peewee ~=2.10.2',
         'peewee-async ~=0.5.7',
         'aiopg ~=0.13.1',
         'factory_boy',
