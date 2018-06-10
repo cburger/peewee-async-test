@@ -38,7 +38,7 @@ class AsyncDatabase:
         app.database = cls.database
         cls.database.init(database=cls.DATABASE_NAME)
         app.database.set_allow_sync(False)
-        app.objects = cls.manager = Manager(app.database, loop=app.loop)
+        app.objects = cls.manager = Manager(app.database)
 
     @classmethod
     def psycopg_exec(cls, query):
